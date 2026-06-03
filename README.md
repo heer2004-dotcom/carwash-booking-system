@@ -19,6 +19,9 @@ In this assignment you will complete the following tasks:
 ---
 
 **GitHub link of the starter project: **[https://github.com/nahaQUT/sampleapp_IFQ636.git](https://github.com/nahaQUT/sampleapp_IFQ636.git)
+
+https://www.figma.com/proto/oa4W1Il6l5ToboeeJQd48O/Untitled?node-id=4-367&p=f&t=mUMQXjH8llQHBBFW-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A365
+
 https://www.figma.com/proto/oa4W1Il6l5ToboeeJQd48O/Untitled?node-id=4-187&p=f&t=vlS6IYbYYobxl80t-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1
 ---
 
