@@ -7,26 +7,28 @@ const Navbar = () => {
   const handleLogout = () => { logout(); navigate('/login'); };
 
   return (
-    <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold">Sparkle Car Wash</Link>
-      <div>
+    <nav className="bg-slate-900 text-white px-6 py-4 flex justify-between items-center shadow-md">
+      <Link to="/" className="text-xl font-bold tracking-wide flex items-center gap-2">
+        <span className="text-blue-400">◆</span> Diamond Car Wash
+      </Link>
+      <div className="flex items-center gap-5">
         {user ? (
           <>
             {user.role === 'admin' ? (
-              <Link to="/admin" className="mr-4">Admin Panel</Link>
+              <Link to="/admin" className="hover:text-blue-300 transition-colors">Admin Panel</Link>
             ) : (
               <>
-                <Link to="/bookings" className="mr-4">My Bookings</Link>
-                <Link to="/packages" className="mr-4">Packages</Link>
+                <Link to="/bookings" className="hover:text-blue-300 transition-colors">My Bookings</Link>
+                <Link to="/packages" className="hover:text-blue-300 transition-colors">Packages</Link>
               </>
             )}
-            <Link to="/profile" className="mr-4">Profile</Link>
-            <button onClick={handleLogout} className="bg-red-500 px-4 py-2 rounded hover:bg-red-700">Logout</button>
+            <Link to="/profile" className="hover:text-blue-300 transition-colors">Profile</Link>
+            <button onClick={handleLogout} className="btn btn-danger">Logout</button>
           </>
         ) : (
           <>
-            <Link to="/login" className="mr-4">Login</Link>
-            <Link to="/register" className="bg-green-500 px-4 py-2 rounded hover:bg-green-700">Register</Link>
+            <Link to="/login" className="hover:text-blue-300 transition-colors">Login</Link>
+            <Link to="/register" className="btn btn-success">Register</Link>
           </>
         )}
       </div>
